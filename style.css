@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.index{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image:url("https://cdn.discordapp.com/attachments/701312584917450766/862714533868732426/cris-tagupa-s9VA7S2F_FQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    position: relative;
+    top: 0;
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+.navigation a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.4s;
+    transition-property: background;
+}
+
+.navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+.navigation a:hover{
+    background: #fff;
+}
+
+.content{
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.content .explore h2{
+    color: #c21fa7;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.content .explore h2 span{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.content .explore p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.content .explore-btn{
+    color: #fff;
+    background-color: #226a80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.content .explore-btn:hover{
+    background: #0c4f60;
+    transition: 0.4s;
+    transition-property: background;
+}
+
+.media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.media-icons a{
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.4s;
+    transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+
+.media-icons a:hover{
+    transform: scale(1.5);
+}
+
+label{
+    display: none;
+}
+
+#check{
+    z-index: 3;
+    display: none;
+}
+
+/* Responsive styles*/
+@media (max-width: 960px){
+    .navigation{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+        transition-property: color;
+    }
+    label:hover{
+        color: #fff;
+    }
+    label .close-btn{
+        display: none;
+    }
+    #check:checked ~ nav .navigation{
+        z-index: 2;
+        position: fixed;
+        background: rgb(114,223,255,0.9);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #check:checked ~ nav .navigation a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    #check:checked ~ nav label .menu-btn{
+        display: none;
+    }
+    #check:checked ~ nav label .close-btn{
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+    label .menu-btn{
+        position: absolute;
+    }
+    header .logo{
+        position: relative;
+        bottom: -6px;
+    }
+    .content .explore h2{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .content .explore  h2 span{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .content .explore  p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 560px){
+    .content .explore  h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .content .explore h2 span{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .content .explore p{
+        font-size: 14px;
+    }
+}
+
+.home-header{
+    position: relative;
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #57D2F2;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content h1{
+    max-width: 650px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.home-content input, h4{
+    margin: 0px 100px;
+    margin-bottom: 50px;
+}
+.sign-up h1{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.sign-up p{
+    margin-left: 100px;
+    margin-top: 60px;
+}
+.sign-up input{
+    margin-left: 100px;
+    margin-bottom: 60px;
+}
+
+.home-content p{
+    max-width: 650px;
+    margin: 60px 100px;
+}
+.photo-content{
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    position: relative;        
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size:  16px;
+    background-color: #CF66D9;
+    color: white;
+    display: flex;
+    padding: 2px;
+}
+
+.articles{
+    display:inline-block;
+    
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+     
+        body {
+            font-size: 16px;
+            margin: 0;
+            line-height: 1.6;
+        }
+        header {
+            padding: 50px;
+            text-align: center;
+            background: #57D2F2;
+            color: white;
+            font-size: 30px;
+        }
+       nav div {
+            display:flex;
+            list-style:none;
+            top: 0;
+            background-color: #CF66D9;
+        }
+
+        nav div a{
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 2px 5px;
+        }
+        nav div li {
+            text-align: center;
+            list-style-type: none;
+            background-color: #CF66D9;
+            padding: 10px;
+            margin: auto;
+        }
+       
+        nav li a:hover {
+            color: white;
+        }      
+        footer {
+            position: relative;        
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size:  small;
+            background-color: #CF66D9;
+            color: white;
+            text-align: center;
+        }
+        #showcase {
+           
+            background-color: #57D2F2;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        #section-a {
+            padding: 20px; 
+            text-align: justify;
+        }
+        #section-b {
+            display:flex;
+        }
+        #section-b div {
+            padding: 20px;
+        }
+        #section-b .box-1, #section-b .box-3 {
+            background-color: whitesmoke;
+            color: white;
+        }
+        #section-b .box-2 {
+            background-color: #57D2F2;
+        }
+        #section-c {
+            padding: 20px; 
+        }
+        .media-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .media-icons a{
+            position: relative;
+            color: #111;
+            font-size: 25px;
+            transition: 0.4s;
+            transition-property: transform;
+        }
+
+        .media-icons a:not(:last-child){
+            margin-right: 60px;
+        }
+
+        .media-icons a:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <header id="showcase">
+        <p><img src="https://media.discordapp.net/attachments/862586829579354133/862896665744113684/Travelokal_LOGO.png" alt="Logo"></p>
+        <h1 style="font-size: 50px; font-">Local Service & International Fun</h1>
+    </header>
+
+   <nav class="navigation">
+    <div class="navbar">  
+        <li><a href="home.html" style="padding-left:100px;">Home</a></li>
+        <li><a href="lifestyle.html">Lifestyle</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" style="padding-right: 100px;">Contact</a></li>
+    </div>
+    </nav>
+
+    <section id="section-a">
+        <br>
+        <h1 style="padding-left:100px; padding-right: 100px; font-size:30px;">Latest Issue</h1>
+        <br>
+        <p style="padding-left:100px; padding-right: 100px;">
+           This is our July issue.
+        </p>
+        <br>
+        <p style="padding-left:100px; padding-right: 100px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima repellat perspiciatis. Cupiditate autem inventore illo nihil quaerat quae deserunt laboriosam numquam porro illum fugiat, sunt error repellendus optio maxime!
+        </p>
+        <p style="padding-left:100px; padding-right: 100px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur illo repellat quos consequatur iure aut voluptate, dolor deserunt qui temporibus ut eaque sapiente aliquam delectus, consectetur laborum alias doloribus ea!</p>
+        <br/>
+       
+    </section>
+
+    <section id="section-a">
+        <br>
+        <h1 style="padding-left:100px; padding-right: 100px; font-size:30px;">Most Popular Articles</h1>
+    </section>   
+    
+    <section id="section-b" style="padding-left:100px; padding-right: 100px;">
+        <div class="box-1"> 
+            <p style="text-align:center;" ><img src="https://cdn.discordapp.com/attachments/701312584917450766/863941199839625246/trike.jpg"></p>
+            <a href="#" src="sectionb-art1" style="color:#CF66D9;"><h4>Lifestyle Section</h4></a>
+    
+        </div>
+        <div class="box-2">
+            <p style="text-align:center;"><img src="https://cdn.discordapp.com/attachments/862586829579354133/862912217800114196/1623699676-GettyImages-116372051.jpg"></p>
+            <a href="#" src="sectionb-art2" style="color:#CF66D9;"><h4>Business Section</h4></a>
+           
+        </div>
+        <div class="box-3">
+            <p style="text-align:center;"><img src="https://cdn.discordapp.com/attachments/701312584917450766/862937623558881310/camarines-sur-cwc-wakeboarding-2.jpg"></p>
+            <a href="#" src="sectionb-art3" style="color:#CF66D9;"><h4>Sports Section</h4></a>
+           
+        </div>
+        <div class="box-2">
+            <p style="text-align:center;"><img src="https://cdn.discordapp.com/attachments/701312584917450766/863941197378355220/house.jpg"></p>
+            <a href="#" src="sectionb-art3" style="color:#CF66D9;"><h4>Lifestyle Section</h4></a>
+           
+        </div>
+        <div class="box-3">
+            <p style="text-align:center;"><img src="https://cdn.discordapp.com/attachments/862586829579354133/862912214478094336/1623424340-Grand-Hyatt-Vail-WEB.jpg"></p>
+            <a href="#" src="sectionb-art3" style="color:#CF66D9;"><h4>Business Section</h4></a>
+           
+        </div>
+    </section>
+
+   
+    <section id="section-c">
+        <br>
+        <h1 style="padding-left:100px; padding-right: 100px; font-size:30px;">Subscribe</h1>
+        <br>
+        <p style="padding-left:100px; padding-right: 100px;">
+            Subscribe to our monthly issue.
+            <br>
+            <input type="text" class="email" name="email" value="email" style="width: 400px;">
+            <button type="submit" form="form1" value="Submit">Submit</button>
+        </p>
+       <br><br>
+    </section>
+
+    <footer>
+        <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>  
+    </footer>
+</body>
+</html>
